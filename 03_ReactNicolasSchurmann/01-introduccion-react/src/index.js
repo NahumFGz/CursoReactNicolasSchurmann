@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 // ! Donde lo deseamos renderizar
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // ! Lo que queremos renderizar
 // root.render('lala');
@@ -44,31 +44,31 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // * El anterior se puede refactorizar para mostrar elementos dinámicos
 // * children es un prop especial que se puede usar para mostrar elementos dinámicos
-const Li = ({children, estado, casa,edad}) => {
-  console.log(casa, edad);
-  return (
-        <li>{children} estoy {estado}</li>
-        )
-}
-const X = () => (
-  <ul>
-    {/* Con Li se para el children --> */}
-    <Li>Chanchito feliz</Li>
-    {/* Tambien lo podemos pasar una propiedad */}
-    <Li estado={'triste!'}>Chanchito</Li>
-    {/* Puedo poner más  propiedades*/}
-    <Li
-      estado={'emocionado!'}
-      casa={false}
-      edad={24}
-    >
-      Chanchito
-    </Li>
+// const Li = ({children, estado, casa,edad}) => {
+//   console.log(casa, edad);
+//   return (
+//         <li>{children} estoy {estado}</li>
+//         )
+// }
+// const X = () => (
+//   <ul>
+//     {/* Con Li se para el children --> */}
+//     <Li>Chanchito feliz</Li>
+//     {/* Tambien lo podemos pasar una propiedad */}
+//     <Li estado={'triste!'}>Chanchito</Li>
+//     {/* Puedo poner más  propiedades*/}
+//     <Li
+//       estado={'emocionado!'}
+//       casa={false}
+//       edad={24}
+//     >
+//       Chanchito
+//     </Li>
 
-    <li>Chanchito emocionado</li>
-  </ul>
-)
-root.render(<X />);
+//     <li>Chanchito emocionado</li>
+//   </ul>
+// )
+// root.render(<X />);
 
 
 // If you want to start measuring performance in your app, pass a function
