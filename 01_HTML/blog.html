@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        ! id -> Se puede poner un identificador en las etiquetas
+                * Es una mala práctica asignar el mismo id a más de una etiqueta
+        ! class -> Indica la clase y puede ser para varias etiquetas
+                * Se utiliza para identificar más de un elemento
+    -->
+    <header>
+        <h1 id="titulo">Blog de chanchito feliz</h1>
+    </header>
+
+    <!--
+        ! div -> Etiqueta antigua para agrupar secciones divididas
+        * section/article -> Etiqueta nueva para agrupar secciones
+    -->
+    <div >
+        <p>Soy un parrafo dentro de un div</p>
+    </div>
+
+    <section>
+        <article class="post">
+            <h2>Titulo de mi post</h2>
+            <p>Descripcion de mi post</p>
+            <img src="img/Tapete.png" width="400"/>
+            <p>Texto del artículo que hay en el blog</p>
+        </article>
+
+        <article class="post">
+            <h2>Titulo de mi post 2</h2>
+            <p>Descripcion de mi post 2</p>
+            <img src="img/Corta.png" width="400"/>
+            <p>Texto del artículo que hay en el blog</p>
+        </article>
+
+        <article class="post">
+            <h2>Titulo de mi post 3</h2>
+            <p>Descripcion de mi post 3</p>
+            <img src="img/L.png" width="400"/>
+            <p>Texto del artículo que hay en el blog</p>
+        </article>
+    </section>
+
+    <footer>
+        <!-- 
+            ! # (Seguido del 'id' de una etiqueta te retorna a donde está la etiqueta) 
+        -->
+        <a href="#titulo">Ir al inicio</a>
+        <a href="mailto:ngutierrez2507@gmail.com">Contactame aqui</a>
+        <p>Copyright 2023</p>
+    </footer>
+
+</body>
+</html>
